@@ -89,8 +89,8 @@ const SignUpBody = () => {
             <option value="" disabled>
               Select Your Role
             </option>
-            <option value="ROLE_USER">Customer</option>
-            <option value="ROLE_SELLER">Seller</option>
+            <option value="ROLE_USER">User</option>
+            <option value="ROLE_FARMER">Farmer</option>
           </select>
 
           <button type="submit">Register</button>
@@ -103,25 +103,7 @@ const SignUpBody = () => {
           <Link to="/login">Already have an account? Log in</Link>
         </p>
       </div>
-      <div className="register-info-container">
-        <div className="motivational-text">
-          <h2 className="logo-name">Light of the World Furniture</h2>
-          <p className="logo-name">
-            Furniture that Shines | Furniture that Inspires
-          </p>
-        </div>
-        <div className="motivational-text">
-          <h2>Welcome Back to Your Dream Space!</h2>
-          <p>
-            Register to unlock exclusive access to our latest furniture
-            collections and special deals.
-          </p>
-          <p>
-            Transform your home with our unique designs and elevate your living
-            experience!
-          </p>
-        </div>
-      </div>
+      
     </section>
   );
 };

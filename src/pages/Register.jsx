@@ -7,9 +7,9 @@ const Register = () => {
   return (
     <>
       <div>
-        <Header />
+      
         <SignUpBody />
-        <Footer />{" "}
+        
       </div>
     </>
   );

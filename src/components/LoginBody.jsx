@@ -161,8 +161,8 @@ const LoginBody = () => {
 
       // Redirect based on role
       if (data.role === "ROLE_ADMIN") navigate("/admin");
-      else if (data.role === "ROLE_CUSTOMER") navigate("/customer");
-      else if (data.role === "ROLE_SELLER") navigate("/seller");
+      else if (data.role === "ROLE_FARMER") navigate("/customeR");
+      
 
       // Clear error on successful login
       setError("");
@@ -209,23 +209,7 @@ const LoginBody = () => {
         {error && <p className="error-message">{error}</p>}
       </div>
 
-      <div className="login-info-container">
-        <div className="motivational-text">
-          <h2 className="logo-name">Light of the World Furniture</h2>
-          <p>Furniture that Shines | Furniture that Inspires</p>
-        </div>
-        <div className="motivational-text">
-          <h2>Welcome Back to Your Dream Space!</h2>
-          <p>
-            Log in to unlock exclusive access to our latest furniture
-            collections and special deals.
-          </p>
-          <p>
-            Transform your home with our unique designs and elevate your living
-            experience!
-          </p>
-        </div>
-      </div>
+      
     </section>
   );
 };

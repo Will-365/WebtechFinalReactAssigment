@@ -1,19 +1,19 @@
 :root {
-    --primary-color: #2c3e50;
-    --secondary-color: #34495e;
-    --accent-color: #3498db;
-    --danger-color: #e74c3c;
-    --success-color: #2ecc71;
-    --warning-color: #f1c40f;
-    --text-color: #2c3e50;
-    --light-gray: #ecf0f1;
-    --white: #ffffff;
+    --primary-color: #4CAF50; /* Green for primary branding */
+    --secondary-color: #6D9B7C; /* Softer green for secondary elements */
+    --accent-color: #FFC107; /* Golden yellow for accents */
+    --danger-color: #D9534F; /* Red for errors/warnings */
+    --success-color: #8BC34A; /* Bright green for success */
+    --warning-color: #FFEB3B; /* Yellow for warnings */
+    --text-color: #3E4E28; /* Dark green for text */
+    --light-gray: #E7E7E7; /* Light background for sections */
+    --white: #FFFFFF; /* Pure white for contrast */
     --shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 body {
     font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-    background-color: #f3e0c085;
+    background-color: #F4F9F4; /* Light greenish-white background */
     margin: 0;
     padding: 0;
     color: var(--text-color);
@@ -21,7 +21,7 @@ body {
 
 /* Navbar Styles */
 .navbar {
-    background-color: var(--white);
+    background-color: var(--primary-color);
     box-shadow: var(--shadow);
     padding: 1rem 1rem;
     display: flex;
@@ -33,7 +33,7 @@ body {
 }
 
 .brand {
-    color: var(--primary-color);
+    color: var(--white);
     font-size: 1.5rem;
     font-weight: bold;
     text-decoration: none;
@@ -66,8 +66,8 @@ body {
 }
 
 .nav-link:hover {
-    background-color: var(--light-gray);
-    color: var(--accent-color);
+    background-color: var(--accent-color);
+    color: var(--white);
     text-decoration: none;
 }
 
@@ -78,7 +78,7 @@ body {
 
 .notification-badge {
     background-color: var(--danger-color);
-    color: white;
+    color: var(--white);
     padding: 0.2rem 0.6rem;
     border-radius: 12px;
     font-size: 0.8rem;
@@ -108,7 +108,7 @@ body {
 .profile-icon {
     width: 40px;
     height: 40px;
-    background-color: var(--light-gray);
+    background-color: var(--secondary-color);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -161,198 +161,21 @@ body {
     margin: 0.5rem 0;
 }
 
-/* Main Content Styles */
-.main-content {
-    padding: 2rem;
-}
-
-/* Table Styles */
-.table {
-    background-color: var(--white);
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: var(--shadow);
-}
-
-.table-dark {
-    background-color: var(--primary-color);
-}
-
-.table th {
-    font-weight: 600;
-    padding: 1rem;
-}
-
-.table td {
-    padding: 1rem;
-    vertical-align: middle;
-}
-
-.table th a {
-    color: var(--white);
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.table th a:hover {
-    color: var(--light-gray);
-}
-
-/* Button Styles */
-.btn {
-    padding: 0.5rem 1rem;
-    border-radius: 6px;
-    font-weight: 500;
-    transition: all 0.3s ease;
-}
-
-.btn-primary {
-    background-color: var(--accent-color);
-    border-color: var(--accent-color);
-}
-
-.btn-primary:hover {
-    background-color: #2980b9;
-    border-color: #2980b9;
-}
-
-.btn-success {
-    background-color: var(--success-color);
-    border-color: var(--success-color);
-}
-
-.btn-success:hover {
-    background-color: #27ae60;
-    border-color: #27ae60;
-}
-
-.btn-warning {
-    background-color: var(--warning-color);
-    border-color: var(--warning-color);
-    color: var(--text-color);
-}
-
-.btn-warning:hover {
-    background-color: #f39c12;
-    border-color: #f39c12;
-}
-
-.btn-danger {
-    background-color: var(--danger-color);
-    border-color: var(--danger-color);
-}
-
-.btn-danger:hover {
-    background-color: #c0392b;
-    border-color: #c0392b;
-}
-
-/* Pagination Styles */
-.pagination {
-    margin-top: 2rem;
-}
-
-.page-link {
-    color: var(--accent-color);
-    padding: 0.5rem 1rem;
-    border: 1px solid var(--light-gray);
-}
-
-.page-item.active .page-link {
-    background-color: var(--accent-color);
-    border-color: var(--accent-color);
-}
-
-.page-item.disabled .page-link {
-    color: #6c757d;
-    pointer-events: none;
-    background-color: var(--white);
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        padding: 1rem;
-    }
-
-    .nav-links {
-        flex-direction: column;
-        width: 100%;
-        margin: 1rem 0;
-    }
-
-    .right-section {
-        width: 100%;
-        justify-content: center;
-        margin-top: 1rem;
-    }
-
-    .table {
-        display: block;
-        overflow-x: auto;
-    }
-}
-
-/* Flexbox layout for the footer */
+/* Footer Section */
 .role-stats-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background-color: #E6F2E6; /* Light green for footer */
+    color: var(--text-color);
     padding: 15px;
-    background-color: #689be78c;  /* Light background for footer */
     border-radius: 8px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  .role-stat {
-    text-align: center;
-    flex: 1;
-  }
-  
-  .stat-title {
-    font-size: 14px;
-    font-weight: 600;
-    color: #616161;
-    margin-bottom: 5px;
-  }
-  
-  .stat-value {
-    font-size: 18px;
-    font-weight: 700;
-    color: #424242;
-  }
-  
-  .card-body {
-    padding: 20px;
-  }
-  
-  .card-header {
-    padding: 15px;
-    background-color: #f1a15219;
+}
+
+/* Card Styles */
+.card-header {
+    background-color: #A5D6A7; /* Soft green header */
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
-    border-bottom: 1px solid #e36e2094;
-  }
-  
-  .card-title {
-    font-size: 24px;
-    font-weight: bold;
-    color: rgb(24, 16, 1);
-    text-align: center;
-  }
-  
-  /* Styling for donut chart container */
-  #role-stats-chart {
-    margin-top: 20px;
-  }
-  
-  .card {
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  
+}
+
+.card-title {
+    color: #33691E; /* Dark green text */
+}

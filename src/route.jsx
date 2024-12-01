@@ -2,13 +2,10 @@ import { createBrowserRouter } from "react-router-dom";
 import App from "./App";
 import Login from "../src/pages/Login";
 import Register from "../src/pages/Register";
-import Products from "../src/pages/Products";
-import Contact from "../src/pages/Contact";
 import ForgotPasswd from "./pages/ForgotPasswd";
 
 import React from "react";
 import Reset from "./pages/Reset";
-import Admin from "./pages/Admin";
 import UserMgt from "./pages/UserMgt";
 import EditUser from "./pages/EditUser";
 import AddUser from "./pages/AddUser";
@@ -17,7 +14,6 @@ import SearchUser from "./pages/SearchUser";
 import UserProfile from "./pages/UserProfile";
 import Notification from "./pages/Notification";
 import ExportData from "./pages/ExportData";
-import Seller from "./pages/Seller";
 
 const router = createBrowserRouter([
   {
@@ -32,14 +28,8 @@ const router = createBrowserRouter([
     path: "/register",
     element: <Register />,
   },
-  {
-    path: "/contact",
-    element: <Contact />,
-  },
-  {
-    path: "/products",
-    element: <Products />,
-  },
+  
+ 
   {
     path: "/forgot-password",
     element: <ForgotPasswd />,
@@ -48,12 +38,9 @@ const router = createBrowserRouter([
     path: "/reset-password",
     element: <Reset />,
   },
+ 
   {
     path: "/admin",
-    element: <Admin />,
-  },
-  {
-    path: "/usermgt",
     element: <UserMgt />,
   },
   {
@@ -84,10 +71,7 @@ const router = createBrowserRouter([
     path: "/admin/download/users",
     element: <ExportData />,
   },
-  {
-    path: "/seller",
-    element: <Seller />,
-  },
+ 
 ]);
 
 export default router;

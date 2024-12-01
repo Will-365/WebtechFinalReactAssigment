@@ -81,14 +81,7 @@ const Notification = () => {
       <div className="notification">
         <h1>Send Notifications</h1>
 
-        <div className="tips">
-          <h2>Tips for Effective Notifications</h2>
-          <ul>
-            <li>Keep the title concise and clear.</li>
-            <li>Write a message that provides essential details.</li>
-            <li>Avoid sending duplicate or unnecessary notifications.</li>
-          </ul>
-        </div>
+        
         {status && <p className="success-message">{status}</p>}
         <form onSubmit={handleSubmit} className="notification_form">
           <div className="input">

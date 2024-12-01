@@ -11,31 +11,18 @@ const Navbar = ({ active, language, onLanguageChange }) => {
   return (
     <nav className="navbar">
       <a href="/admin" className="brand">
-        e-Furniture Admin
+        Farm-MGT Admin
       </a>
 
       <div className="nav-links">
         <a
-          href="/usermgt"
+          href="/admin"
           className={`nav-link ${active === "users" ? "active" : ""}`}
         >
           <i className="fas fa-users"></i>
           <span>Users</span>
         </a>
-        <a
-          href="/admin/furniture"
-          className={`nav-link ${active === "furniture" ? "active" : ""}`}
-        >
-          <i className="fas fa-couch"></i>
-          <span>Furniture</span>
-        </a>
-        <a
-          href="/admin/orders"
-          className={`nav-link ${active === "orders" ? "active" : ""}`}
-        >
-          <i className="fas fa-shopping-cart"></i>
-          <span>Orders</span>
-        </a>
+        
         <a
           href="/admin/notifications"
           className={`nav-link ${active === "notifications" ? "active" : ""}`}
